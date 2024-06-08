@@ -1,0 +1,348 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: white;
+  }
+  
+
+  nav{
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    margin: auto;
+    background-color: black;
+    z-index: 222;
+  }
+
+
+nav,.left,.right{
+    display: flex;
+    
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: center;
+}
+
+.delivery,.pickup{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #1C1816;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    align-self: center;
+    letter-spacing: 2px;
+}
+
+.delivery{
+    border: 2px solid #EA002A;
+}
+
+
+
+.bucket{
+    position: relative;
+}
+.number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+}
+
+.login button{
+    background-color: #EA002A;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-weight: bolder;
+    font-family: "Black Ops One", system-ui;
+    border-radius: 5px;
+}
+
+.menu-icon i{
+    font-size: 2rem;
+
+}
+
+
+.front-page{
+    background-image: url('https://www.kfcpakistan.com/images/368c24d0-1eb6-11ef-8eab-abe07cbd279b-995x356_desktop_image-2024-05-30185541.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.reorder{
+    width: 50%;
+    background-color:#EA002A;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Black Ops One';
+    display: block;
+    margin: auto;
+}
+
+.explore{
+    width: 70%;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+
+.e-cards{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.e-card{
+    padding: 1rem;
+    transition: all 0.3s;
+    text-align: center;
+    background-color: #1C1816;
+    border-radius: 50% 50% 3% 50% ;
+    position: relative;
+}
+
+.e-heading hr{
+    width: 7%;
+    margin: 0.5rem 0 0 0 ;
+    height: 2px;
+    background-color: #EA002A;
+    border: 0;
+}
+.s-heading hr{
+    width: 7%;
+    margin: 0.5rem 0 0 0 ;
+    height: 2px;
+    background-color: #EA002A;
+    border: 0;
+}
+
+.e-card hr{
+    width: 30%;
+    margin: 0.5rem auto 0;
+    height: 2px;
+    background-color: #EA002A;
+    border: 0;
+}
+
+.d-heading{
+    text-transform: uppercase;
+}
+
+.d-heading hr{
+    width: 7%;
+
+    height: 2px;
+    background-color: #EA002A;
+    border: 0;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.e-card:hover{
+    transform: translateY(-20px);
+    
+}
+
+.seller{
+    width: 70%;
+    margin: 2rem auto;
+}
+
+
+.s-cards{
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.s-card{
+    background-color: #1C1816;
+}
+
+.s-heading{
+    text-transform: uppercase;
+}
+
+
+.boxes{
+    display: flex;
+    gap: 0.4rem;
+    justify-content: center;
+}
+
+.red-box{
+    height: 25px;
+width: 20px;
+background-color: #EA002A;
+}
+
+.price{
+    background-color: #EA002A;
+    padding: 0.4rem;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 47% 51%, 0% 0%);
+    text-align: right;
+    width: 30%;
+    margin-left: auto;
+
+}
+
+.s-card h2{
+    padding: 1rem;
+}
+
+.deals{
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+}
+
+
+
+.d-cards{
+    display: flex;
+    margin: 1rem 0;    
+    gap: 1rem;
+}
+
+.d-card{
+    background: #1C1816;
+    padding: 0 1rem 1rem 1rem;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 1px #1C1816;
+}
+
+.d-content{
+    flex-direction: column;
+    gap: 0.5rem;
+    display: flex;
+}
+
+.d-card button{
+    width: max-content;
+    border: none;
+    color: white;
+    padding: 0.7rem 1rem;
+    margin: auto;
+    display: block;
+    margin-bottom: -10%;
+    background-color: #EA002A;
+    font-weight: bolder;
+    border-radius: 5px;
+    }
+    
+    .d-card i{
+        font-size: 2rem;
+        color: #EA002A;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+}
+
+
+.my-image{
+    transition: all 0.3s;
+}
+
+.d-card:hover .my-image{
+    scale: 1.1;
+}
+
+.d-image{
+    overflow: hidden;
+}
+
+.d-card button{
+    transition: all 0.7s;
+   
+}
+
+
+.d-card button:hover{
+    transform: translateY(-5px);
+    background-color: white;
+    color: #EA002A;
+    border: 2px solid transparent;
+    border-top: 2px solid black;
+    border-right: 2px dotted blue;
+    border-left: 2px solid orange;
+    border-bottom: 2px solid red;
+}
+
+.images{
+    display: flex;
+    width: 70%;
+    gap: 1rem;
+    margin: auto;
+}
+
+.left-images{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    }
+    .right-images{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+}
+
+.images img{
+    border-radius: 10px;
+}
+
+
+.explore-image{
+    background-color: #1C1816;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+}
+
+.explore-image img{
+    object-fit: contain;
+
+}
+.explore-image button{
+    padding: 0.8rem 1rem;
+    background-color: #EA002A;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: 30%;
+}
+
